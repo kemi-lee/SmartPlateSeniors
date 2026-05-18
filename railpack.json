@@ -1,9 +1,10 @@
 {
   "provider": "php",
   "webserver": {
-    "documentRoot": "PHP"
+    "documentRoot": "."
   },
   "deploy": {
-    "startCommand": "php -S 0.0.0.0:$PORT -t PHP"
+    "startCommand": "php -S 0.0.0.0:$PORT"
   }
+}
 }
