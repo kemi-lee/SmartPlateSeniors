@@ -1,7 +1,7 @@
 <?php
 session_start();
 require_once __DIR__ . '/../config/db.php';
-require_once __DIR__ . '/../config/api-keys.php';
+require_once '../config/config.php';
 
 if (!isset($_SESSION['user_id'])) {
     http_response_code(401);

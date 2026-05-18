@@ -2,7 +2,7 @@
 if (session_status() === PHP_SESSION_NONE) session_start();
 include('../includes/header.php');
 include('../config/db.php');
-include('../config/api-keys.php');
+include('../config/config.php');
 
 $user_id = $_SESSION['user_id'] ?? null;
 if (!$user_id) {
