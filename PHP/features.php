@@ -185,7 +185,7 @@ include('../includes/header.php');
                         <li>Compare food options</li>
                     </ul>
 
-                    <a href="../Nutrition Explore Page/nutrition-explorer.php" class="btn-primary-custom mt-2">
+                    <a href="/nutrition-explorer/nutrition-explorer.php" class="btn-primary-custom mt-2">
                         Open Nutrition Explorer
                     </a>
                 </div>
