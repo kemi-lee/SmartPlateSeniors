@@ -173,23 +173,17 @@ $extraStyles = '
 
 include('../includes/header.php');
 
-require_once '../config/config.php';
-$conn = new mysqli(DB_HOST, DB_USER, DB_PASS, DB_NAME, DB_PORT);
-
-if ($conn->connect_error) {
-    die("Connection Failed: " . $conn->connect_error);
-}
+require_once '../config/db.php'; // or wherever your getPDO() lives
 
 // Fetch all smart meals
 $meals = [];
-$result = $conn->query("SELECT * FROM ready_meals");
-if ($result) {
-    while ($row = $result->fetch_assoc()) {
-        $meals[] = $row;
-    }
+try {
+    $pdo = getPDO();
+    $stmt = $pdo->query("SELECT * FROM ready_meals");
+    $meals = $stmt->fetchAll();
+} catch (PDOException $e) {
+    die("DB ERROR: " . $e->getMessage());
 }
-$conn->close();
-
 // Split meals into chunks of 6 for each slide
 $slides = array_chunk($meals, 6);
 ?>
