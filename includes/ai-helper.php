@@ -3,8 +3,7 @@
  * AI Helper Class for Smart Plate
  * Handles communication with Claude API
  */
-define('AI_API_KEY', getenv('AI_API_KEY'));
-define('AI_MODEL', getenv('AI_MODEL'));
+
 
 class AIHelper {
 
