@@ -2,7 +2,7 @@
 if (session_status() === PHP_SESSION_NONE) {
     session_start();
 }
-require_once __DIR__ . '/../config/api-keys.php';
+define('FDC_API_KEY', getenv('FDC_API_KEY'));
 $extraStyles = '
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
