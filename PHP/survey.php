@@ -90,7 +90,7 @@ function checkedRestriction($value, $existing) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dietary Preferences | SmartPlate</title>
-    <link rel="stylesheet" href="/SmartPlateSeniors/assets/spstyle.css">
+    <link rel="stylesheet" href="/assets/spstyle.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
     <style>

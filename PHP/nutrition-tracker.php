@@ -37,7 +37,7 @@ $totalFat      = array_sum(array_column($logs, 'fat_g'));
     <title>Nutrition Tracker | SmartPlate</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/SmartPlateSeniors/assets/spstyle.css">
+    <link rel="stylesheet" href="/assets/spstyle.css">
     <style>
         body { background: #f5f2ec; margin: 0; font-family: 'DM Sans', sans-serif; }
 

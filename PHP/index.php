@@ -2,7 +2,7 @@
 if (session_status() === PHP_SESSION_NONE) session_start();
 
 if (isset($_SESSION['user_id'])) {
-    header('Location: /SmartPlateSeniors/PHP/dashboard.php');
+    header('Location: /PHP/dashboard.php');
     exit;
 }
 
@@ -21,7 +21,7 @@ include('../includes/header.php');
         .hero {
             position: relative;
             height: 90vh;
-            background: url('/SmartPlateSeniors/assets/Images/healthyplatter.jpg') no-repeat center center/cover;
+            background: url('/assets/Images/healthyplatter.jpg') no-repeat center center/cover;
             display: flex;
             justify-content: center;
             align-items: center;

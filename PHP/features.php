@@ -5,7 +5,7 @@ if (session_status() === PHP_SESSION_NONE) {
 }
 
 if (isset($_SESSION['user_id'])) {
-    header('Location: /SmartPlateSeniors/PHP/dashboard.php');
+    header('Location: /PHP/dashboard.php');
     exit;
 }
 

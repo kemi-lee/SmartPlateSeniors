@@ -13,7 +13,7 @@ $initial    = strtoupper(substr($username, 0, 1) ?: 'U');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Plate</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/SmartPlateSeniors/assets/spstyle.css">
+    <link rel="stylesheet" href="/assets/spstyle.css">
     <?php if (!empty($extraStyles)) echo $extraStyles; ?>
 
     <style>
@@ -65,7 +65,7 @@ $initial    = strtoupper(substr($username, 0, 1) ?: 'U');
 <nav class="navbar">
     <div class="nav-container">
         <div class="logo">
-            <img src="/SmartPlateSeniors/assets/Images/New Smartplate logo.png" alt="SmartPlate Logo" class="logo-img">
+            <img src="/assets/Images/New Smartplate logo.png" alt="SmartPlate Logo" class="logo-img">
         </div>
 
         <button class="hamburger" id="hamburger" aria-label="Toggle menu">
@@ -77,11 +77,11 @@ $initial    = strtoupper(substr($username, 0, 1) ?: 'U');
         <div class="nav-right" id="navRight">
             <ul class="nav-links">
                 <?php if (!$isLoggedIn): ?>
-                    <li><a href="/SmartPlateSeniors/PHP/index.php">Home</a></li>
-                    <li><a href="/SmartPlateSeniors/PHP/features.php">Features</a></li>
-                    <li><a href="/SmartPlateSeniors/PHP/login.php">Sign In</a></li>
+                    <li><a href="/PHP/index.php">Home</a></li>
+                    <li><a href="/PHP/features.php">Features</a></li>
+                    <li><a href="/PHP/login.php">Sign In</a></li>
                 <?php else: ?>
-                    <li><a href="/SmartPlateSeniors/PHP/dashboard.php">Dashboard</a></li>
+                    <li><a href="/PHP/dashboard.php">Dashboard</a></li>
 
                     <!-- more dropdown -->
                     <li class="nav-dropdown">
@@ -89,23 +89,23 @@ $initial    = strtoupper(substr($username, 0, 1) ?: 'U');
                             <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="6 9 12 15 18 9"/></svg>
                         </button>
                         <div class="dropdown-menu">
-                            <a href="/SmartPlateSeniors/Nutrition Explore Page/nutrition-explorer.php">
+                            <a href="/Nutrition Explore Page/nutrition-explorer.php">
                                 <span>🔍</span> Explore
                             </a>
-                            <a href="/SmartPlateSeniors/PHP/recipe_generator.php">
+                            <a href="/PHP/recipe_generator.php">
                                 <span>📖</span> Recipe Generator
                             </a>
-                            <a href="/SmartPlateSeniors/PHP/shopping-list.php">
+                            <a href="/PHP/shopping-list.php">
                                 <span>🛒</span> Shopping List
                             </a>
-                            <a href="/SmartPlateSeniors/PHP/favorites.php">
+                            <a href="/PHP/favorites.php">
                                 <span>❤️</span> Favorites
                             </a>
                         </div>
                     </li>
 
                     <!-- profile dropdown -->
-                    <li><a href="/SmartPlateSeniors/PHP/logout.php">Sign Out</a></li>
+                    <li><a href="/PHP/logout.php">Sign Out</a></li>
 
                 <?php endif;?>
             </ul>

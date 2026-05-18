@@ -52,7 +52,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up | SmartPlate</title>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/SmartPlateSeniors/assets/spstyle.css">
+    <link rel="stylesheet" href="/assets/spstyle.css">
     <style>
         .signup-page {
             min-height: calc(100vh - 70px);
