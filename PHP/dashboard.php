@@ -106,7 +106,7 @@ $displayMonth = date('F Y');
     </a>
     <ul class="nav-links">
         <li><a href="dashboard.php" class="active">Dashboard</a></li>
-        <li><a href="../Nutrition Explore Page/nutrition-explorer.php">Explore</a></li>
+        <li><a href="/nutrition-explorer/nutrition-explorer.php">Explore</a></li>
         <li><a href="favorites.php">Favorites</a></li>
     </ul>
     <div class="nav-right">
