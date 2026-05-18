@@ -1,0 +1,6 @@
+{
+  "provider": "php",
+  "webserver": {
+    "documentRoot": "PHP"
+  }
+}
